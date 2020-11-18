@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Section from '../../Section';
 import { Typography, Button, Row, Col } from 'antd';
 import ReactPlayer from 'react-player';
@@ -83,16 +84,18 @@ const SubSection = ({
               {buttons && (
                 <div className='main-section-buttonBar'>
                   {buttons.map((button, index) => (
-                    <Button
-                      key={index}
-                      type={button.type}
-                      size='large'
-                      onClick={button.onClick}
-                      href={button.url}
-                      style={button.buttonStyles}
-                    >
-                      {button.text}
-                    </Button>
+                    <Link to={button.path}>
+                      <Button
+                        key={index}
+                        type={button.type}
+                        size='large'
+                        onClick={button.onClick}
+                        href={button.url}
+                        style={button.buttonStyles}
+                      >
+                        {button.text}
+                      </Button>
+                    </Link>
                   ))}
                 </div>
               )}

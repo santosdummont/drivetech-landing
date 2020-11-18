@@ -94,7 +94,7 @@ const Home = ({ i18n, isMobile, topOffset }) => {
           {
             text: buttons.security,
             type: 'primary',
-            url: paths.SECURITY,
+            path: paths.SECURITY,
           },
         ]}
       />
@@ -108,7 +108,7 @@ const Home = ({ i18n, isMobile, topOffset }) => {
           {
             text: buttons.control,
             type: 'primary',
-            url: paths.CONTROL,
+            path: paths.CONTROL,
           },
         ]}
       />
@@ -123,7 +123,7 @@ const Home = ({ i18n, isMobile, topOffset }) => {
           {
             text: buttons.tracking,
             type: 'primary',
-            url: paths.TRACKING,
+            path: paths.TRACKING,
           },
         ]}
       />
@@ -134,14 +134,6 @@ const Home = ({ i18n, isMobile, topOffset }) => {
         description={lang.howTheyWork.hardware.description}
         image={lang.howTheyWork.hardware.image}
         bgColor='white'
-        // dark
-        buttons={[
-          {
-            text: buttons.hardware,
-            type: 'primary',
-            url: paths.TRACKING,
-          },
-        ]}
       />
 
       <TextCenter
