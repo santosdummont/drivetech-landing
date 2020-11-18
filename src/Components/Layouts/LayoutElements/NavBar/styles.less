@@ -1,0 +1,59 @@
+@import (reference) '../../../../Theme/Styles/App.less';
+
+.navbar-container {
+  position: 'sticky';
+  top: 0px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  transition: 0.3s ease-out;
+  background: rgba(255, 255, 255, 0);
+  font-weight: 400;
+  width: 100%;
+  @media (max-width: 600px) {
+    padding: 10px 20px;
+  }
+
+  &.default {
+    background: rgba(255, 255, 255, 0);
+  }
+  &.active {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12),
+      0 0 1px 0 rgba(41, 92, 176, 0.25);
+  }
+  .logo {
+    padding: 10px;
+    max-width: 160px;
+    img {
+      max-width: 100%;
+    }
+  }
+  margin: 0 auto;
+  .navbar-content {
+    width: 100%;
+    max-width: @page-max-width;
+    margin: 0 auto;
+  }
+}
+
+.menu-item {
+  font-weight: 600;
+  &.menu-item-inverted {
+    color: white;
+    & .menu-item-link {
+      color: white;
+      &:hover {
+        color: unset;
+      }
+    }
+  }
+}
+
+.drawer-menu-item {
+  display: flex !important;
+  align-items: center;
+}
+
+.drawer-menu-item-icon {
+  margin-right: 10px;
+}

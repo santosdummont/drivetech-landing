@@ -1,0 +1,32 @@
+@import (reference) '../../../Theme/Styles/App.less';
+.SectionContainer {
+  margin: 0 auto;
+  // background-color: @default_main_section_bg!important;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  @media (max-width: 600px) {
+    padding: 60px 20px;
+  }
+  &.maxWidth {
+    max-width: 100%;
+    padding: 80px 0;
+  }
+  &.fullHeight {
+    min-height: 100vh;
+    padding: 0;
+  }
+  .section {
+    max-width: @page-max-width;
+    width: 100%;
+    &.maxWidth {
+      max-width: 100%;
+    }
+  }
+}

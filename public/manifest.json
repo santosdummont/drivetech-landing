@@ -1,0 +1,40 @@
+{
+  "short_name": "Drivetech",
+  "name": "Drivetech: Tu flota segura y controlada, para una operación transparente, eficiente y confiable",
+  "description": "Toda la información de tus vehículos en el mismo lugar. Disminuye robos, entrega visibilidad y continuidad a tu operación con información de calidad y en tiempo real.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "shortcuts": [
+    {
+      "name": "Seguridad",
+      "short_name": "Seguridad",
+      "description": "View weather information for today",
+      "url": "/seguridad"
+    },
+    {
+      "name": "Control y Gestión",
+      "short_name": "Control y Gestión",
+      "description": "View weather information for tomorrow",
+      "url": "/control-y-gestion"
+    }
+  ]
+}

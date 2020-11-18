@@ -1,0 +1,19 @@
+@import (reference) '../../../../Theme/Styles/App.less';
+.slick-arrow {
+  height: 40px;
+  width: 40px;
+  &.slick-prev {
+    left: 0;
+  }
+
+  &.slick-next {
+    right: 0;
+  }
+  z-index: 1;
+  &:before {
+    border-radius: 100px;
+    font-size: 50px;
+    color: @primary-color;
+    align-self: center;
+  }
+}

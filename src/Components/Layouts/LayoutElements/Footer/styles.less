@@ -1,0 +1,71 @@
+@import (reference) '../../../../Theme/Styles/App.less';
+.footer-container {
+  width: 100%;
+  background: @footer-bg;
+  color: @footer-link-color;
+}
+
+.footer-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: @page-max-width;
+  padding: 40px 20px;
+}
+.footer-bottom-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: @page-max-width;
+  padding: 20px 0 0;
+}
+h1 {
+  &.ant-typography {
+    &.footer-title {
+      font-size: @heading-4-size;
+      color: @footer-title-color;
+      font-weight: 600;
+    }
+  }
+}
+.footer-title {
+  color: @footer-title-color;
+  font-weight: 600;
+}
+.footer-link {
+  display: block;
+  line-height: 2.5em;
+  color: @footer-link-color;
+  font-weight: 600;
+  font-size: @font-size-sm;
+  @media (max-width: 640px) {
+    font-size: inherit;
+  }
+  &.small {
+    font-size: 10px;
+  }
+}
+
+.footer-company-name {
+  color: @white!important;
+  font-weight: 600;
+}
+
+.footer-lock-icon {
+  max-width: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-phone-number-container {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  font-size: @font-size-sm;
+  font-weight: 600;
+  align-items: center;
+  color: white;
+  margin-bottom: 5px;
+}
+.phone-number {
+  font-size: @font-size-sm;
+  color: @footer-link-color;
+  font-weight: 600;
+}

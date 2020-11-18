@@ -1,0 +1,41 @@
+@import (reference) '../../../../Theme/Styles/App.less';
+.main-section-image {
+  width: 100%;
+}
+
+.main-section-row {
+  &.reversed {
+    flex-direction: row-reverse;
+    @media (max-width: 640px) {
+      flex-direction: unset;
+    }
+  }
+}
+
+.main-section-name {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: @font-size-sm;
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+.main-section-title {
+  margin-top: 0.5em !important;
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+.main-section-description {
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+
+.main-section-buttonBar {
+  text-align: left;
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}

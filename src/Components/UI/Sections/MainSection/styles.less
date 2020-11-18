@@ -1,0 +1,33 @@
+@import (reference) '../../../../Theme/Styles/App.less';
+
+.main-section-image {
+  width: 100%;
+}
+
+.top-content {
+  margin: 0 auto;
+  max-width: @page-max-width;
+  width: 100%;
+  display: flex;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  padding: 50px 20px 20px 20px;
+}
+
+.main-section-brands-container {
+  max-width: @page-max-width;
+  margin: 0 auto;
+  padding: 50px 20px 0px;
+}
+.brands-image {
+  height: 30px;
+  width: auto;
+  filter: saturate(0);
+  &.mobile {
+    margin-bottom: 40px;
+  }
+  &:hover {
+    filter: none;
+  }
+}
